@@ -15,14 +15,18 @@ body {
 	opacity: 30%;
 }
 
-.res-link {
+.btn-flexbox {
 	text-decoration: none;
 	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.res-ul {
+.header-menu {
 	display: inline-block;
 	text-decoration: none;
+	position: relative;
 }
 
 /* Main */
@@ -49,14 +53,45 @@ video {
 	top: 0;
 	left: 0;
 	right: 0;
-	color: white;
-	
+	color: white;	
 }
 
 .header-btn {
-	padding: 10px;
+	padding: 5px;
 	text-align: center;
 	font-size: 22px;
+	text-decoration: none;
+	color: white;
+}
+
+.header-text-menu {
+	padding: 0 3px;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+}
+
+.current-card-bar {
+	width: 40%;
+    border-bottom: 2px solid #fff;
+    margin: 0 auto;
+    padding-top: 3px;
+}
+
+.red-dot-notify::before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    text-align: center;
+    background-color: #f93050;
+    font-size: 22px;
+    line-height: 100%;
+    border-radius: 25px;
+    top: 0%;
+    right: -14%;
+    transform: translate(-50%, -50%);
 }
 
 /* Footer */
@@ -67,13 +102,80 @@ footer {
 	right: 0;
 	bottom: 0;
 	color: #fff;
+}
 
-	/* Inserisci qui sotto 
-	le tue regole, se necessario. */
+.footer-text-video {
+	width: 330px;
+	margin: 0 0 15px 15px;
+}
+
+.footer-profile-link {
+	text-decoration: none;
+	color: white;
+}
+
+.footer-video-desc {
+	padding-top: 8px;
+}
+
+.view-more-btn {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
 }
 
 .nav-menu-footer {
-	
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: black;
+
+}
+
+.nav-bar-icon {
+	font-size: 23px;
+}
+
+.nav-menu-item {
+	text-align: center;
+    font-size: 10px;
+    padding: 0 5px;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0;
+}
+
+.new-post-menu {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 28px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.new-post-menu a {
+	color: black;
+	font-size: 28px;
+	margin-bottom: 5px;
+}
+
+.number-message::after {
+    content: "19";
+    position: absolute;
+    width: 21px;
+    height: 15px;
+    text-align: center;
+    background-color: #f93050;
+    font-size: 11px;
+    border-radius: 8px;
+    top: 68%;
+    right: 24%;
+    transform: translate(-50%, -50%);
 }
 
 /* Sidebar */
@@ -87,18 +189,23 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	gap: 25px;
-
-	/* Inserisci qui sotto 
-	le tue regole, se necessario. */
 }
 
 .sidebar-icon {
 	font-size: 30px;
 }
 
+.sidebar-text-icon {
+	text-decoration: none;
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+
 .sidebar-item {
 	text-align: center;
 	font-size: 14px;
+	line-height: 22px;
 }
 
 .box-logo {

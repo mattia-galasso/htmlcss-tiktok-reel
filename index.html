@@ -31,17 +31,24 @@
     <!-- Header -->
     <header class="reel-header">
       <div class="header-btn other-video">
-        <a class="res-link" href="#"><i class="bi bi-play-btn"></i></a>
+        <a class="header-btn" href="#"><i class="bi bi-play-btn"></i></a>
       </div>
       <div class="header-menu">
         <ul>
-          <li class="res-ul opacity30"><a class="res-link" href="#">Esplora</a></li>
-          <li class="res-ul opacity30"><a class="res-link" href="#">Seguiti</a></li>
-          <li class="res-ul"><a class="res-link" href="#">Per te</li>
+          <li class="header-menu opacity30">
+            <a class="header-text-menu" href="#">Esplora</a>
+          </li>
+          <li class="header-menu opacity30 red-dot-notify">
+            <a class="header-text-menu" href="#">Seguiti</a>
+          </li>
+          <li class="header-menu for-you-item">
+            <a class="header-text-menu" href="#">Per te</a>
+            <div class="current-card-bar"></div>
+          </li>
         </ul>
       </div>
       <div class="header-btn search-btn">
-        <a class="res-link" href="#"><i class="bi bi-search"></i></a>
+        <a class="header-btn" href="#"><i class="bi bi-search"></i></a>
       </div>
     </header>
 
@@ -51,42 +58,69 @@
         <img class="boolean-logo" src="./assets/img/boolean_logo.png" alt="Boolean Logo">
       </figure>
       <div class="sidebar-item heart-sidebar">
-        <a class="res-link sidebar-icon" href="#"><i class="bi bi-heart-fill"></i></a>
-        <p>588</p>
+        <a class="sidebar-text-icon" href="#">
+          <i class="bi bi-heart-fill sidebar-icon"></i>
+          <span>588</span>
+        </a>
       </div>
       <div class="sidebar-item comment-sidebar">
-        <a class="res-link sidebar-icon" href="#"><i class="bi bi-chat-dots-fill"></i></a>
-        <p>13</p>
+        <a class="sidebar-text-icon" href="#">
+          <i class="bi bi-chat-dots-fill sidebar-icon"></i>
+          <span>13</span>
+        </a>
       </div>
       <div class="sidebar-item bookmark-sidebar">
-        <a class="res-link sidebar-icon" href="#"><i class="bi bi-bookmark-fill"></i></a>
-        <p>638</p>
+        <a class="sidebar-text-icon" href="#">
+          <i class="bi bi-bookmark-fill sidebar-icon"></i>
+          <span>638</span>
+        </a>
       </div>
       <div class="sidebar-item share-sidebar">
-        <a class="res-link sidebar-icon" href="#"><i class="bi bi-sign-turn-slight-right-fill"></i></a>
-        <p>491</p>
+        <a class="sidebar-text-icon" href="#">
+          <i class="bi bi-sign-turn-slight-right-fill sidebar-icon"></i>
+          <span>491</span>
+        </a>
       </div>
     </div>
 
     <!-- Footer -->
     <footer>
-      <div>boolean.careers</div>
-      <div>Prova il Fundamentals Camp. 20 ore di corso gratuito per... Vedi altro</div>
+      <div class="footer-text-video">
+        <a class="footer-profile-link" href="#">boolean.careers</a>
+        <p class="footer-video-desc">Prova il Fundamentals Camp. 20 ore di corso gratuito per... 
+        <a class="view-more-btn" href="#">Vedi altro</a></p> 
+      </div>
       <nav class="nav-menu-footer">
-        <div class="home-menu">
-          Home
+        <div class="home-menu nav-menu-item">
+          <a class="btn-flexbox" href="#">
+            <i class="bi bi-house-fill nav-bar-icon"></i>
+            <span>Home</span>
+          </a>
         </div>
-        <div class="friends-menu">
-          Amici
+        <div class="friends-menu nav-menu-item opacity30">
+          <a class="btn-flexbox" href="#">
+            <i class="bi bi-people nav-bar-icon"></i>
+            <span>Amici</span>
+          </a>
         </div>
-        <div class="new-post-menu">
-          +
+        <div class="nav-menu-item">
+          <div class="new-post-menu">
+            <a class="btn-flexbox" href="#">
+              +
+            </a>
+          </div>
         </div>
-        <div class="message-menu">
-          Posta in arrivo
+        <div class="message-menu nav-menu-item number-message">
+          <a class="btn-flexbox opacity30" href="#">
+            <i class="bi bi-chat-square nav-bar-icon"></i>
+            <span class="opacity30">Posta in Arrivo</span>
+          </a>
         </div>
-        <div class="profile-menu">
-          Profilo
+        <div class="profile-menu nav-menu-item opacity30">
+          <a class="btn-flexbox" href="#">
+            <i class="bi bi-person nav-bar-icon"></i>
+            <span>Profilo</span>
+          </a>
         </div>
       </nav>
     </footer>
