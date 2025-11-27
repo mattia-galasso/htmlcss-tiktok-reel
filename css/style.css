@@ -9,6 +9,23 @@ body {
 	font-family: 'TikTok Sans', sans-serif;
 }
 
+/* Utilities */
+
+.opacity30 {
+	opacity: 30%;
+}
+
+.res-link {
+	text-decoration: none;
+	color: white;
+}
+
+.res-ul {
+	display: inline-block;
+	text-decoration: none;
+}
+
+/* Main */
 video {
 	height: 100%;
 	width: 100%;
@@ -26,14 +43,20 @@ video {
 
 .reel-header {
 	position: absolute;
+	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	top: 0;
 	left: 0;
 	right: 0;
+	color: white;
+	
+}
 
-	/* Inserisci qui sotto 
-	le tue regole, se necessario. */
+.header-btn {
+	padding: 10px;
+	text-align: center;
+	font-size: 22px;
 }
 
 /* Footer */
@@ -49,15 +72,58 @@ footer {
 	le tue regole, se necessario. */
 }
 
+.nav-menu-footer {
+	
+}
+
 /* Sidebar */
 .sidebar {
 	padding: 0 16px;
 	position: absolute;
 	right: 0;
 	top: 40%;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 25px;
 
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
+}
+
+.sidebar-icon {
+	font-size: 30px;
+}
+
+.sidebar-item {
+	text-align: center;
+	font-size: 14px;
+}
+
+.box-logo {
+	position: relative;
+}
+
+.box-logo::before {
+	content: "+";
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	text-align: center;
+	background-color: #f93050;
+	font-size: 22px;
+	line-height: 100%;
+	border-radius: 25px;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.boolean-logo {
+	width: 50px;
+	border-radius: 50px;
+	border: 2px solid white;
 }
 
 /* ---------------------
